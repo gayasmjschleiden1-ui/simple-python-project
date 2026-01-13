@@ -1,3 +1,4 @@
+#Simple calculator coding
 def add(x, y):
     return x + y
 
@@ -9,7 +10,7 @@ def multiply(x, y):
 
 def divide(x, y):
     if y == 0:
-        return "Error: Division by zero"
+        return "Error: Division by zero" #dividing with 0 causes the code to return back
     return x / y
 
 def main():
@@ -20,11 +21,11 @@ def main():
         print("3. Multiply")
         print("4. Divide")
         print("5. Exit")
-        choice = input("Enter choice (1/2/3/4/5): ")
-        if choice == '5':
+        choice = input("Enter choice (1/2/3/4/5): ") #enter your choice based on the given
+        if choice == '5': #if you type "5" it will cause the code to break allowing you to exit
             break
         if choice in ['1', '2', '3', '4']:
-            num1 = float(input("Enter first number: "))
+            num1 = float(input("Enter first number: ")) 
             num2 = float(input("Enter second number: "))
             if choice == '1':
                 print(f"{num1} + {num2} = {add(num1, num2)}")
@@ -36,7 +37,8 @@ def main():
                 result = divide(num1, num2)
                 print(f"{num1} / {num2} = {result}")
         else:
-            print("Invalid input")
+            print("Invalid input") #
 
 if __name__ == "__main__":
+
     main()
