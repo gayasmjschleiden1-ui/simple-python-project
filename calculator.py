@@ -37,7 +37,7 @@ def main():
                 result = divide(num1, num2)
                 print(f"{num1} / {num2} = {result}")
         else:
-            print("Invalid input") #
+            print("Invalid input") 
 
 if __name__ == "__main__":
 
